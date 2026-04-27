@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>
+            Calm Icon Interaction_willow_assessment2.
+        </title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+
+    <style>
+        .row {
+            width: 720px;
+            margin: 10px auto;
+        }
+
+        .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 20px;
+        }
+
+        .image-container img {
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.08);
+        }
+
+        .image-container img:active {
+            transform: scale(0.95);
+        }
+    </style>
+    </head>
+
+ <body style="background-color: #F7FBFC;">
+
+    <div class="row">
+        <div class="image-container">
+            <img id="img1" src="img/water.png" width="200" height="200"
+                 onmouseover="this.src='img/water_ro4.png'; stopAllSounds(); sound1.play();"
+                 onmouseout="this.src='img/water.png'; sound1.stop();">
+        </div>
+
+        <div class="image-container">
+            <img id="img2" src="img/shell.png" width="200" height="200"
+                 onmouseover="this.src='img/shell_ro2.png'; stopAllSounds(); sound2.play()"
+                 onmouseout="this.src='img/shell.png'; sound2.stop();">
+        </div>
+
+        <div class="image-container">
+            <img id="img3" src="img/cloud.png" width="200" height="200"
+                 onmouseover="this.src='img/cloud_ro3.png'; stopAllSounds(); sound3.play()"
+                 onmouseout="this.src='img/cloud.png'; sound3.stop();">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="image-container">
+            <img id="img4" src="img/rain.png" width="200" height="200"
+                 onmouseover="this.src='img/rain_ro.png'; stopAllSounds(); sound4.play()"
+                 onmouseout="this.src='img/rain.png'; sound4.stop();">
+        </div>
+
+        <div class="image-container">
+            <img id="img5" src="img/lotus.png" width="200" height="200"
+        
+                 onmouseover="this.src='img/lotus_ro1.png'; stopAllSounds(); sound5.play()"
+                 onmouseout="this.src='img/lotus.png'; sound5.stop();">
+        </div>
+
+        <div class="image-container">
+            <img id="img6" src="img/candle.png" width="200" height="200"
+                 onmouseover="this.src='img/candle_ro1.png'; stopAllSounds(); sound6.play()"
+                 onmouseout="this.src='img/candle.png'; sound6.stop();">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="image-container">
+            <img id="img7" src="img/cup.png" width="200" height="200"
+                 onmouseover="this.src='img/cup_ro1.png'; stopAllSounds(); sound7.play()"
+                 onmouseout="this.src='img/cup.png'; sound7.stop();">
+        </div>
+
+        <div class="image-container">
+            <img id="img8" src="img/moon.png" width="200" height="200"
+                 onmouseover="this.src='img/moon_ro1.png'; stopAllSounds(); sound8.play()"
+                 onmouseout="this.src='img/moon.png'; sound8.stop();">
+        </div>
+
+        <div class="image-container">
+            <img id="img9" src="img/plant.png" width="200" height="200"
+                 onmouseover="this.src='img/plant_ro1.png'; stopAllSounds(); sound9.play()"
+                 onmouseout="this.src='img/plant.png'; sound9.stop();">
+        </div>
+    </div>
+
+    <script>
+        var sound1 = new buzz.sound("sound/1-.mp3");
+        var sound2 = new buzz.sound("sound/2-.mp3");
+        var sound3 = new buzz.sound("sound/3-1.mp3");
+        var sound4 = new buzz.sound("sound/4-.mp3");
+        var sound5 = new buzz.sound("sound/5-.mp3");
+        var sound6 = new buzz.sound("sound/6-1.mp3");
+        var sound7 = new buzz.sound("sound/7-.mp3");
+        var sound8 = new buzz.sound("sound/8-.mp3");
+        var sound9 = new buzz.sound("sound/9-.mp3");
+
+        var allSound = [sound1, sound2, sound3, sound4, sound5, sound6, sound7, sound8, sound9];
+
+        function stopAllSounds () {allSound.forEach(function(sound){
+
+        });
+    }
+
+    </script>
+
+ </body>
+</html>
